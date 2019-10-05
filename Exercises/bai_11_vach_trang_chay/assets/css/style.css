@@ -1,0 +1,81 @@
+*{margin: 0; padding: 0;}
+.hue {
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+.hue-background{
+	background:url(../images/anh.jpg);
+	background-size: 700px;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	margin-top:100px;
+	transition: 1s;
+}
+.hue-content {
+    position: absolute;
+    top: 0;
+    text-align: center;
+
+    background: #00000060;
+    height: 100%;
+}
+
+p.hue-dainoi {
+    color: white;
+    background: #aaa;
+    width: 100px;
+    margin-left: 37%;
+    cursor: pointer;
+    margin-top:15%;
+}
+p.hue-dainoi:hover{
+	background-color: white;
+	color: black;
+}
+p.hue-samuat {
+    color: white;
+    font-size: 25px;
+}
+p.hue-title span {
+    color: white;
+}
+
+.hue:hover .hue-background{
+	background-size: 600px;
+}
+.hue-content:before {
+    content: "";
+    background: rgba(255,255,255,0.2);
+    width: 800px;
+    height: 200px;
+    display: block;
+    transform: matrix(1,1,0,1,400,0);
+    position: absolute;
+    top: -80px;
+}
+
+.hue-content:after {
+    content: "";
+    background: rgba(255,255,255,0.2);
+    width: 800px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: 140px;
+    transform: matrix(1,1,0,1,400,0);
+}
+
+.hue:hover .hue-content{
+	background: #00000020;
+}
+.hue:hover .hue-content:before,.hue:hover .hue-content:after{
+	animation:show_ra 1s forwards;
+}
+@-webkit-keyframes show_ra{
+	100%{transform: matrix(1, 1, 0, 1, -1000, -100);}
+}

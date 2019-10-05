@@ -1,0 +1,73 @@
+*{margin: 0; padding: 0;}
+.wrap{
+	width: 80%;
+	margin:auto;
+
+}
+.marry{
+	background-image:url('marry.jpg');
+	width:50%;
+	height: 400px; 
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin:20px auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+.marry p {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.action1,.action2 {
+    font-size: 14px;
+    color: white;
+    padding-bottom: 5px;
+
+}
+
+.action1 img,.action2 img {
+    width: 150px;
+    height: 100px;
+}
+.marry{
+	position: relative;
+}
+.action1,.action2{
+	position: absolute;
+}
+.action2 {
+    bottom: 0;
+}
+
+.action1 {
+    bottom: 110px;
+}
+.action{
+	opacity: 0;
+	visibility: hidden;
+}
+.marry p {
+    position: absolute;
+    top: 50%;
+    left: 34%;
+
+}
+.marry:hover p{
+	transform: translateY(-200px);
+	font-size: 15px;
+	transition: 1s;
+}
+.marry:hover .action{
+	opacity: 1;
+	visibility: visible;
+	animation:dichuyen 1.5s forwards;
+}
+@-webkit-keyframes dichuyen{
+	0%{transform: translateY(700px);}
+	100%{transform: translateY(400px);}
+}

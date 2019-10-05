@@ -1,0 +1,28 @@
+*{margin: 0; padding: 0;}
+.nut{
+	width: 100px;
+	margin:0 auto;
+
+	background-image:url('1.png');
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	text-transform: uppercase;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	font-weight: bold;
+}
+.nut:hover{
+	animation:hieuung 0.2s forwards;
+	animation-iteration-count: infinite;
+}
+@-webkit-keyframes hieuung{
+	0%{}
+	50%{
+		transform: rotate(3deg);
+	}
+	100%{
+		transform: rotate(-3deg);
+	}
+}

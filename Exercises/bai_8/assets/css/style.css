@@ -1,0 +1,146 @@
+*{margin: 0; padding: 0;}
+.our-team-text {
+    text-align: center;
+    padding: 30px;
+}
+
+.ourteam {
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    font-family: cursive;
+}
+
+
+/*image*/
+.our-team-image{
+	width: 100%;
+}
+.our-team-title h2 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.our-team-title .title-content{
+	font-family: 'Macondo Swash Caps', cursive;
+	padding:0 5px;
+}
+.our-team-title .our-team-title-icon{
+	font-size: 30px;
+}
+.our-team-title-icon i{
+	padding-right: 20px; 
+	cursor: pointer;
+}
+
+.our-team-title-icon i:last-child{
+	padding-right:0px !important;
+}
+.our-team-title button {
+    background: green;
+    border-radius: 12px;
+    padding: 5px;
+    cursor: pointer;
+}
+.our-team-title-icon i:hover{
+	animation:chay 0.4s forwards;
+	color: orange;
+	animation-iteration-count:infinite;
+}
+.our-team-title button:hover{
+	animation:chay 0.4s forwards;
+	animation-iteration-count:infinite;
+}
+@-webkit-keyframes chay{
+	0%{}
+	50%{transform: rotate(4deg);}
+	100%{transform: rotate(-4deg);}
+}
+.our-team-title {
+    color: white;
+}
+.our-team-text p {
+    font-size: 22px;
+    letter-spacing: 5px;
+    color: orange;
+}
+
+.card1 img{
+	width: 350px;
+	height: 317px;
+	padding:0 10px;
+
+}
+
+.card1{
+	width: 25%;
+	float:left;
+	cursor: pointer;
+}
+/**/
+/*show*/
+.card1{
+	position: relative;
+}
+.our-team-title{
+	position: absolute;
+	top:40px;
+	text-align: center;
+	visibility: hidden;
+	left: 0;
+}
+.card1 .xam {
+    background: #00000047;
+    width: 330px;
+    height: 317px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    z-index: 1;
+    display: none;
+   
+}
+
+.our-team-title button,.our-team-title-icon i{
+	position: relative; /*Muc dich de nam tren tk Xam*/
+	z-index: 2;
+}
+.card1:hover .xam{
+	display: block;
+	transition: 0.5s;
+}
+.card1:hover .our-team-title{
+	visibility: visible;
+	transition: 0.5s;
+}
+
+/*reponsive*/
+@media screen and (max-width: 1285px){
+	.card1{
+		width: 33.3%;
+		text-align: center;
+		padding-top: 20px;
+		position: relative;
+	}
+	
+	.title-content{
+		padding:0 11% !important;
+	}
+}
+@media screen and (max-width: 1000px){
+	.card1{
+		width: 50%;
+	}
+	.title-content{
+		padding:0 18% !important;
+	}
+	
+}
+@media screen and (max-width: 675px){
+	.card1{
+		width: 100%;
+	}
+	.title-content{
+		padding:0 25% !important;
+	}
+}

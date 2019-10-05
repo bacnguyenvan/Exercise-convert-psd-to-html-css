@@ -1,0 +1,34 @@
+*{margin: 0; padding: 0;}
+.content ul li {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+}
+
+.content ul {
+    padding: 40px 20px;
+}
+
+.content ul li a {
+    text-decoration: none;
+}
+li.tacdon {
+    text-transform: uppercase;
+    background: #97cb1a;
+    padding: 10px 0px;
+    width: 175px !important;
+    position: relative;
+    border-radius:5px;
+}
+
+li.tacdon a {
+    color: white;
+    font-weight: bold;
+}
+li.tacdon:after {
+    content: "";
+    border: 10px solid transparent;
+    position: absolute;
+    border-left-color: #97cb1a;
+    right: -20px;
+}

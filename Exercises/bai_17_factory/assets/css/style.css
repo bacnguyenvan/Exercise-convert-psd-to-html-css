@@ -1,0 +1,103 @@
+*{margin: 0; padding: 0;}
+.wraper {
+    width: 100%;
+    background: gray;
+    height: 150px;
+}
+.wraper-content {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+}
+
+.logo-content {
+    display: flex;
+    border: 1px dashed white;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 190px;
+    box-sizing: border-box;
+}
+.icon-content {
+    display: flex;
+    width: 600px;
+    height: 35px;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.logo-text {
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+    padding-left: 5px;
+}
+.icon-info {
+    width: 180px;
+    display: flex;
+    border-right: 1px solid white;
+    padding-left: 10px;
+}
+.icon-info .icon {
+    width: 40px;
+    height: 38px;
+}
+.icon i {
+    font-size: 35px;
+    color: rgb(192, 192, 192);
+}
+.info span {color: rgb(192, 192, 192);}
+
+.info p {
+    color: white;
+}
+.list-icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-icon i {
+    width: 40px;
+    color: yellow;
+    font-size: 20px;
+}
+div#icon-info3 {
+    width: 235px;
+}
+
+/*khoi 2*/
+
+.menu {
+    background: white;
+    width: 1000px;
+    margin: auto;
+    height: 75px;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+}
+.menu ul li {
+    display: inline;
+    transition: 0.5s;
+   
+}
+.menu ul li:hover{
+	 background: gray;
+}
+.menu ul li:hover >a{
+	color: white;
+}
+.menu ul {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+.menu ul li a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+.menu ul li:after {
+    content: "|";
+}

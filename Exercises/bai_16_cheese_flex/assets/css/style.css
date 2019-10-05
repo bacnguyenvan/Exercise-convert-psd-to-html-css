@@ -1,0 +1,109 @@
+*{margin: 0; padding: 0;}
+.menu-top {
+    width: 1200px;
+    margin: auto;
+    border-bottom: 1px solid #0000002b;
+    display: flex;
+    height: 50px;
+    line-height: 47px;
+    justify-content: space-between;
+}
+
+.icon {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i {
+    width: 50px;
+    color: #0000004f;
+}
+.hotline {
+    width: 260px;
+}
+.hotline span {
+    color: #d71b96;
+    font-weight: bold;
+}
+
+.title span {
+    padding-left: 10px;
+    color: #0000004f;
+    font-weight: bold;
+    cursor: pointer;
+}
+.title span:hover{
+	color: #d71b96;
+}
+.menu-bottom {
+    width: 1200px;
+    margin: 30px auto;
+    display: flex;
+    height: 80px;
+    line-height: 67px;
+    justify-content: space-between;
+}
+.power {
+    width: 380px;
+    display: flex;
+}
+
+.power span {
+    width: 90px;
+}
+
+.log-in-acount {
+    display: flex;
+    justify-content: space-around;
+    height: 50%;
+    margin-top: 15px;
+}
+
+.icon i {
+    cursor: pointer;
+}
+
+.icon i:hover {
+    color: #000000c4;
+}
+.power span{
+	cursor: pointer;
+	font-weight: bold;
+}
+.power span:hover{
+	color: #d71b96;
+}
+
+.log-in-acount div {
+    width: 127px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.dang-ki{
+	 border: 2px solid pink;
+	 color: #d71b96;
+}
+.shop-dang-ki{
+	border: 2px solid gray;
+	 color: gray;
+}
+.dang-ki:hover{
+	background:linear-gradient(81deg, #eb008b, #652d90);
+	color: white;
+}
+
+.dang-nhap:hover{
+	border: 2px solid pink;
+	color: #d71b96;
+}
+.shop-dang-ki:hover{
+	border-color: pink;
+	color: #d71b96;
+}

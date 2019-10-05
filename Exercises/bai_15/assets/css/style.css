@@ -1,0 +1,41 @@
+*{margin: 0; padding: 0;}
+.menu {
+    width: 960px;
+    margin: auto;
+    background: indigo;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 40px;
+}
+
+.quocki {
+    width: 190px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    width: 147px;
+    margin-left: -60px;
+}
+.quocki-img {
+    width: 20%;
+    height: 45px;
+    overflow: hidden;
+}
+
+.quocki-img img {
+    width: 80%;
+}
+
+.quocki select {
+    border: none;
+    background: transparent;
+    color: white;
+}
+.address {
+    margin-left: -11%;
+}

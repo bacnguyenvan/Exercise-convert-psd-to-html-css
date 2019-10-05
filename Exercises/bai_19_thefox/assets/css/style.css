@@ -1,0 +1,182 @@
+*{margin: 0; padding: 0;}
+.wraper{
+	width: 100%;
+	height: 100%
+}
+.menu-title {
+    text-align: center;
+    width: 60%;
+    margin: 30px auto;
+}
+
+.menu-title p {
+    color: #a1b1bc;
+}
+.menu-content ul li {
+    display: inline-block;
+}
+.menu-content {
+    width: 70%;
+    margin: auto;
+}
+.menu-content ul li a {
+    color: #414141;
+    text-decoration: none;
+    padding: 0 20px;
+}
+.menu-content>ul {
+    background: #f7f9f9;
+    line-height: 51px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #0000002b;
+}
+
+li.dropdown {
+    position: relative;
+    z-index: 9;
+}
+
+ul.dropdown-content {
+    position: absolute;
+    background: #f7f9f9;
+    display: none;
+    transition: .5s;
+}
+li.dropdown:hover ul.dropdown-content{
+	display: block;
+}
+
+/*image*/
+
+.img-effect {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 60px;
+}
+
+.img-top,.img-bottom {
+    width: 100%;
+    display: flex;
+}
+
+.img1 {
+    width: 40%;
+    height: 250px;
+}
+
+.img-2-3,.img-5-6 {
+    width: 40%;
+    height: 250px;
+    display: flex;
+}
+.img7{
+	width: 40%;
+    height: 250px;
+}
+.img4,.img8 {
+    width: 20%;
+    height: 250px;
+}
+
+.img4 img,.img1 img,.img7 img,.img8 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-2-3 img,.img-5-6 img {
+    width: 100%;
+    height: 100%;
+}
+
+/*hieu ung*/
+.img-hieuung,.img-hieuung2{
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+.hieu-ung {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(60deg,#47c0e5, #25bea1);
+    height: 100%;
+    visibility: hidden;
+    transition: 0.5;
+    
+}
+
+.icon1,.icon2 {
+    position: absolute;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    filter:opacity(0);
+}
+.icon1{
+	top: 30%;
+    right: 0%;
+    transition: 0.4s;
+    color: white;
+
+}
+.icon2{
+	top: 30%;
+    left: 0%;
+    transition: 0.4s;
+    background: white;
+}
+
+.text {
+    top: 100%;
+    position: absolute;
+    left: 33%;
+    text-align: center;
+    width: 150px;
+    color: white;
+    transition: 0.5s;
+}
+.img-hieuung:hover .hieu-ung{
+	visibility: visible;
+}
+.img-hieuung:hover .text{
+	top: 50%;
+}
+.img-hieuung:hover .icon1{
+	right: 42%;
+	filter:opacity(1);
+}
+.img-hieuung:hover .icon2{
+	left: 42%;
+	filter:opacity(1);
+}
+.img-23{
+	width: 100%;
+}
+.text{
+    width: 195px;
+}
+
+.img-hieuung2:hover .hieu-ung{
+	visibility: visible;
+}
+.img-hieuung2 .text{
+	left: 15%;
+}
+.img-hieuung2:hover .text{
+	top: 50%;
+}
+.img-hieuung2:hover .icon1{
+	right: 34%;
+	filter:opacity(1);
+}
+.img-hieuung2:hover .icon2{
+	left: 34%;
+	filter:opacity(1);
+}

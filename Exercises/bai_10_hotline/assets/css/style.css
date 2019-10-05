@@ -1,0 +1,75 @@
+*{margin: 0; padding: 0;}
+
+.hotline {
+    background: rgba(230, 8, 8, 0.65);
+    width: 200px;
+    height: 44px;
+    margin: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+
+    position: relative;
+}
+.phone-number {
+    float: right;
+    padding-right: 20px;
+}
+.phone {
+    float: left;
+    background-color: #ef10105e;
+    margin: 2px;
+    padding: 0px 12px;
+    font-size: 20px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 0;
+}
+.phone i{
+    animation:run 1s infinite;
+}
+@-webkit-keyframes run{
+	0%{}
+	50%{transform: rotate(0);}
+	75%{transform: rotate(-30deg);}
+	90%{transform: rotate(0);}
+	95%{transform: rotate(-30deg);}
+	100%{transform: rotate(0);}
+}
+
+.vong-tron-to {
+    border: 1px solid red;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: -11px;
+    left: -13px;
+
+    animation:chay-vt 1s infinite;
+}
+@-webkit-keyframes chay-vt{
+	0%{transform: scale(0.8);}
+	100%{
+		transform: scale(1.2);
+		border:solid 1px transparent;
+	}
+
+}
+
+.vong-tron-nho {
+    background: rgba(255,0,0,0.3);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -6px;
+    left: -8px;
+    border-radius: 50%;
+    animation:chay-vn 2s infinite;
+}
+@-webkit-keyframes chay-vn{
+	50%{transform: scale(1.2);}
+	100%{transform: scale(1);}
+}

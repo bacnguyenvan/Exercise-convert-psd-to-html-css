@@ -1,0 +1,237 @@
+*{margin: 0; padding: 0;}
+
+/*header*/
+
+/*row tren*/
+.row.header-top {
+    background: #2e2e2e;
+    height: 35px;
+    line-height: 37px; /*cho text o giua*/
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.row.header-top .left-text {
+    color: #999999;
+    float: left;
+    
+}
+
+.row.header-top .right-text {
+    float: right;
+}
+
+.row.header-top .right-text .register {
+    color: #f7c51e;
+}
+
+.row.header-top .right-text .miha {
+    color: #999999;
+    padding-right: 38px;
+    position: relative;
+}
+
+.row.header-top .right-text .miha:before {
+    content: '1';
+    width: 22px;
+    height: 22px;
+    background: #f7c51e;
+    position: absolute;
+    border-radius: 50%;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -22px;
+    top: -8px;
+}
+.row.header-top .right-text .miha:after {
+    content: '';
+    border: 7px solid transparent;
+    position: absolute;
+    border-top-color: #999999;
+    top: 5px;
+    right: 20px;
+}
+/*end row tren*/
+
+/*row duoi*/
+.row.header-bottom {
+    background: #454545;
+    height: 150px;
+}
+
+.row.row-top {
+    height: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.row.header-bottom .row-top .logo {
+    border: 1px dotted white;
+    width: 220px;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 75px;
+    text-align: center;
+    line-height: 66px;
+    margin: 20px 0;
+}
+
+.row.header-bottom .row-top .logo span {
+    color: white;
+}
+
+.icon-info {
+    display: flex;
+    width: 100%;
+    margin-top:30px;
+}
+
+.icon-info-content {
+    display: flex;
+    width: 190px;
+   justify-content: space-between;
+   cursor: pointer;
+}
+
+.icon-info-content .icon {
+    width: 47px;
+}
+
+.icon-info-content .icon i {
+    /* width: 100%; */
+    font-size: 58px;
+    padding-top: 8px;
+    color: #666666;
+}
+.icon-info-content .info {
+    width: 120px;
+    height: 60px;
+}
+.icon-info-content .info p {
+    color: #dddddd;
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.icon-info-content .info span {
+    font-size: 14px;
+    color: #717171;
+}
+.border-right {
+    background: white;
+    height: 59px;
+    width: 1px;
+}
+.col-md-4.icon-info-content.fix-width .info {
+    width: 171px;
+    padding-left: 10px;
+}
+.list-icon i {
+    color: #f7c51e;
+    font-size: 20px;
+    margin-top: 45px;
+    cursor: pointer;
+}
+
+.list-icon {
+    display: flex;
+    justify-content: space-between;
+}
+.list-icon i:hover{
+	color: blue;
+}
+.icon-info-content:hover .icon i{
+	color: #f7c51e;
+
+}
+
+/*menu*/
+.menu{
+    background-image: url(../images/background-header-bottom.png);
+    height: 75px;
+    border:none;
+    background-color: transparent;
+    margin-top:10px;
+}
+
+ul.menu-content>li {
+    display: inline-block;
+    margin-left: -3px;
+}
+
+ul.menu-content {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 75px;
+}
+
+.menu-content>li>a {
+    border-right: 1px solid #999999;
+    text-decoration: none;
+    padding: 0 30px;
+    color:#999999;
+    font-weight: bold;
+  
+}
+.active a{
+    color: black!important;
+    transition: 0.5s;
+}
+.active{
+    border-top:3px solid #f7c51e;
+    position: relative;
+}
+.menu-content>li:hover{
+    
+     border-top:3px solid #f7c51e;
+}
+.menu-content>li:hover>a{
+     color: black!important;
+}
+li.fix-end>a {
+    border-right: none;
+}
+
+ul.dropdown-content {
+    position: absolute;
+    line-height: 24px;
+    list-style: none;
+    background: lightblue;
+    width: 100%;
+    top: 72px;
+    text-align: left;
+    display: none;
+    transition: 1.5s;
+}
+
+ul.dropdown-content li {
+    border-bottom: 1px solid green;
+}
+
+ul.dropdown-content li a {
+    text-decoration: none;
+}
+ul.dropdown-content li:hover{
+    background:green;
+}
+ul.dropdown-content li:hover a{
+    color: #f7c51e!important;
+}
+li.active:after {
+    content: '';
+    position: absolute;
+    border: 7px solid transparent;
+    border-top-color: #999999;
+    bottom: 0;
+    left: 56px;
+    
+}
+/**/
+
+/*end row duoi*/
+
+/*end header*/

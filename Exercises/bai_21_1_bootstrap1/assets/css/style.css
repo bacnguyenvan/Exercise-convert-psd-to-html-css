@@ -1,0 +1,99 @@
+*{margin: 0; padding: 0;}
+ul.menu li {
+    display: inline-block;
+  }
+
+ul.menu {
+    position: absolute;
+    top: 0;
+    right: 120px;
+
+}
+
+ul.menu li a {
+    color: black;
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.header {
+    border-bottom: 1px solid black;
+    height: 100%;
+    line-height: 45px;
+}
+
+ul.menu li:hover>a {
+    color: red;
+}
+
+.show .dropdown {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+.show .dropdown:hover {
+    color: red;
+}
+.hue-logo p{
+	color: red;
+	font-weight: bold;
+}
+@media screen and (max-width: 916px){
+	ul.menu{
+		display: none;
+	}
+	ul.menu li{
+		display: inline;
+	}
+	.show .dropdown {
+		display: block;
+	}
+	.show:hover .menu{
+		display: block;
+		position: absolute;
+		left: 100px;
+		top: 50px;
+		z-index: 10;
+		
+	}
+}
+@media screen and (max-width: 786px){
+	.show:hover .menu{
+	left: 15%;
+	}
+	.edit{
+		margin-bottom: 20px;
+	}
+
+}
+
+/*content 2*/
+.row {
+    margin-top: 20px;
+}
+
+p.hue-title {
+    position: relative;
+}
+
+p.hue-title:after {
+    content: "0";
+    border: 1px solid black;
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 0 8px;
+    right: 0;
+    cursor: pointer;
+}
+
+p.hue-title:before {
+    content: "";   
+    height: 23px;
+    position: absolute;
+    bottom: -9px;
+    right: 13px;
+    border: 7px solid transparent;
+    border-left-color: black;
+}
